@@ -3,7 +3,7 @@
    ========================================================= */
 
 :root {
-    /* Paleta Tática Dark Blue (Zero Fundo Branco) */
+    /* Paleta Tática Dark Blue */
     --fundo-principal: #0a111c;       /* Azul Escuro Profundo */
     --fundo-card: #121d2f;            /* Azul Marinho Fechado */
     --fundo-elevado: #18273e;         /* Azul Tático Médio */
@@ -68,7 +68,7 @@ body {
     color: var(--azul-brilhante);
 }
 
-/* NAVBAR & LOGO NO TOPO */
+/* NAVBAR & LOGO */
 .navbar {
     position: sticky;
     top: 0;
@@ -88,7 +88,6 @@ body {
     align-items: center;
 }
 
-/* Envolto e iluminação para a logo */
 .logo-wrapper {
     display: flex;
     align-items: center;
@@ -104,7 +103,7 @@ body {
 }
 
 .logo-img {
-    height: 85px; /* Tamanho amplo para destaque */
+    height: 85px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 0 10px rgba(0, 162, 255, 0.4));
@@ -269,7 +268,7 @@ body {
     color: var(--texto-secundario);
 }
 
-/* SEÇÃO DE SERVIÇOS & FOTOS INTEGRALIZADAS */
+/* SEÇÃO DE SERVIÇOS - EXIBIÇÃO CLARA DAS SUAS IMAGENS */
 .services {
     padding: 80px 0;
     background-color: var(--fundo-principal);
@@ -306,7 +305,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
@@ -327,25 +326,24 @@ body {
     box-shadow: 0 0 25px rgba(0, 162, 255, 0.4);
 }
 
+/* CONTAINER DA IMAGEM TOTALMENTE NÍTIDO E SEM COBERTURA */
 .card-img-box {
     width: 100%;
-    height: 480px; /* Formato vertical adaptado para folhetos/cartazes */
-    background-color: #060b12;
-    position: relative;
-    overflow: hidden;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .card-img-box img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* Exibe 100% da foto sem cortar */
-    object-position: center;
-    padding: 6px;
-    transition: transform 0.4s ease;
-}
-
-.card:hover .card-img-box img {
-    transform: scale(1.03);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    filter: none !important;
 }
 
 .card-body {
@@ -587,6 +585,5 @@ footer {
     .nav-links { display: none; }
     .hero h1 { font-size: 28px; }
     .about-grid { grid-template-columns: 1fr; }
-    .card-img-box { height: 400px; }
     .logo-img { height: 65px; }
 }
