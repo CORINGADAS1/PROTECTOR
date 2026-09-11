@@ -1,27 +1,26 @@
 /* =========================================================
-   PROTECTOR OPERAÇÕES ESPECIAIS - TEMA AZUL ESCURO TÁTICO
+   PROTECTOR OPERAÇÕES ESPECIAIS - TEMA AZUL ESCURO & TÁTICO
    ========================================================= */
 
 :root {
-    /* Paleta Tática Dark Blue */
-    --fundo-principal: #0b1320;       /* Azul Noite Profundo */
-    --fundo-card: #111a2e;            /* Azul Marinho Fechado */
-    --fundo-elevado: #18253f;         /* Azul Tático Escuro */
+    /* Paleta Tática Dark Blue (Zero Fundo Branco) */
+    --fundo-principal: #0a111c;       /* Azul Escuro Profundo */
+    --fundo-card: #121d2f;            /* Azul Marinho Fechado */
+    --fundo-elevado: #18273e;         /* Azul Tático Médio */
     
-    /* Cores de Destaque */
-    --azul-eletrico: #0066ff;
-    --azul-brilhante: #00bfff;
+    /* Destaques Neon e Alerta */
+    --azul-brilhante: #00a2ff;
     --azul-glow: #00d2ff;
-    --ouro-alerta: #ffb703;
+    --amarelo-alerta: #ffb703;
     --verde-whats: #25d366;
     
     /* Textos */
     --texto-principal: #ffffff;
-    --texto-secundario: #a3b8cc;
+    --texto-secundario: #8ea8c3;
     
     /* Bordas e Sombras */
-    --borda-azul: rgba(0, 191, 255, 0.25);
-    --sombra-glow: 0 0 20px rgba(0, 191, 255, 0.2);
+    --borda-azul: rgba(0, 162, 255, 0.3);
+    --sombra-glow: 0 0 20px rgba(0, 162, 255, 0.25);
     
     /* Fontes */
     --fonte-titulos: 'Montserrat', sans-serif;
@@ -41,11 +40,9 @@ body {
     color: var(--texto-principal);
 }
 
-/* =========================================================
-   TOP BAR TÁTICA
-   ========================================================= */
+/* TOP BAR */
 .top-bar {
-    background-color: #060a12;
+    background-color: #05080f;
     color: var(--texto-secundario);
     font-size: 12px;
     padding: 10px 0;
@@ -65,24 +62,21 @@ body {
 .top-bar-contact a {
     color: var(--texto-principal);
     text-decoration: none;
-    margin-left: 15px;
 }
 
 .top-bar-contact .whats-top {
     color: var(--azul-brilhante);
 }
 
-/* =========================================================
-   NAVBAR & AREA DA LOGO PROTECTOR
-   ========================================================= */
+/* NAVBAR & LOGO NO TOPO */
 .navbar {
     position: sticky;
     top: 0;
-    background-color: rgba(11, 19, 32, 0.95);
+    background-color: rgba(10, 17, 28, 0.96);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--borda-azul);
+    border-bottom: 2px solid var(--azul-brilhante);
     z-index: 1000;
-    padding: 12px 0;
+    padding: 10px 0;
 }
 
 .nav-container {
@@ -94,56 +88,40 @@ body {
     align-items: center;
 }
 
-/* Destaque para a Logo Protector no Topo */
-.logo {
+/* Envolto e iluminação para a logo */
+.logo-wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
     text-decoration: none;
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 191, 255, 0.05));
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 1px solid var(--borda-azul);
+    background: radial-gradient(circle, rgba(0, 162, 255, 0.15) 0%, rgba(18, 29, 47, 0) 70%);
+    padding: 6px 14px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 
-.logo-icon {
-    font-size: 32px;
-    color: var(--azul-brilhante);
-    filter: drop-shadow(0 0 10px var(--azul-brilhante));
+.logo-wrapper:hover {
+    transform: scale(1.04);
 }
 
-.logo div span {
-    font-family: var(--fonte-titulos);
-    font-size: 20px;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    display: block;
-    line-height: 1;
-}
-
-.logo div small {
-    font-family: var(--fonte-titulos);
-    font-size: 9px;
-    color: var(--ouro-alerta);
-    letter-spacing: 2px;
-    font-weight: 800;
-    display: block;
-    margin-top: 3px;
+.logo-img {
+    height: 85px; /* Tamanho amplo para destaque */
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 162, 255, 0.4));
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 20px;
+    gap: 22px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--texto-secundario);
     font-weight: 700;
-    font-size: 13px;
+    font-size: 13.5px;
     transition: 0.3s;
 }
 
@@ -152,18 +130,16 @@ body {
 }
 
 .btn-nav {
-    background: linear-gradient(135deg, var(--azul-eletrico), var(--azul-brilhante));
+    background: linear-gradient(135deg, #0055ff, var(--azul-brilhante));
     color: #ffffff !important;
-    padding: 10px 18px;
+    padding: 12px 20px;
     border-radius: 6px;
     box-shadow: var(--sombra-glow);
 }
 
-/* =========================================================
-   HERO / BANNER PRINCIPAL
-   ========================================================= */
+/* HERO SECTION */
 .hero {
-    background: linear-gradient(180deg, #0b1320 0%, #0d1b30 50%, #0b1320 100%);
+    background: linear-gradient(180deg, #0a111c 0%, #0e1a2c 50%, #0a111c 100%);
     padding: 80px 0;
     text-align: center;
     border-bottom: 1px solid var(--borda-azul);
@@ -176,7 +152,7 @@ body {
 }
 
 .badge {
-    background: rgba(0, 191, 255, 0.15);
+    background: rgba(0, 162, 255, 0.15);
     color: var(--azul-brilhante);
     padding: 8px 18px;
     border-radius: 20px;
@@ -185,22 +161,21 @@ body {
     border: 1px solid var(--azul-brilhante);
     display: inline-block;
     margin-bottom: 20px;
-    letter-spacing: 1px;
 }
 
 .hero h1 {
     font-family: var(--fonte-titulos);
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 900;
     color: #ffffff;
-    text-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+    text-shadow: 0 0 15px rgba(0, 162, 255, 0.4);
     margin-bottom: 10px;
 }
 
 .hero h2 {
     font-family: var(--fonte-titulos);
     font-size: 22px;
-    color: var(--ouro-alerta);
+    color: var(--amarelo-alerta);
     margin-bottom: 20px;
 }
 
@@ -252,9 +227,7 @@ body {
     color: var(--azul-brilhante);
 }
 
-/* =========================================================
-   BARRA DE DESTAQUES
-   ========================================================= */
+/* VANTAGENS */
 .features-bar {
     background-color: var(--fundo-card);
     padding: 30px 0;
@@ -274,10 +247,10 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: rgba(255, 255, 255, 0.02);
-    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 14px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 191, 255, 0.1);
+    border: 1px solid var(--borda-azul);
 }
 
 .feature-item i {
@@ -296,9 +269,7 @@ body {
     color: var(--texto-secundario);
 }
 
-/* =========================================================
-   SEÇÃO DE SERVIÇOS E CARDS DAS FOTOS
-   ========================================================= */
+/* SEÇÃO DE SERVIÇOS & FOTOS INTEGRALIZADAS */
 .services {
     padding: 80px 0;
     background-color: var(--fundo-principal);
@@ -322,7 +293,7 @@ body {
     font-family: var(--fonte-titulos);
     font-size: 34px;
     color: #ffffff;
-    text-shadow: 0 0 10px rgba(0, 102, 255, 0.3);
+    text-shadow: 0 0 10px rgba(0, 162, 255, 0.3);
 }
 
 .section-title p {
@@ -330,7 +301,6 @@ body {
     font-size: 15px;
 }
 
-/* Grade dos Cards */
 .cards-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -340,7 +310,6 @@ body {
     gap: 30px;
 }
 
-/* Card Individual de cada Serviço */
 .card {
     background: var(--fundo-card);
     border-radius: 12px;
@@ -348,21 +317,20 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
     border-color: var(--azul-brilhante);
-    box-shadow: 0 0 25px rgba(0, 191, 255, 0.35);
+    box-shadow: 0 0 25px rgba(0, 162, 255, 0.4);
 }
 
-/* Ajuste para as Imagens dos Panfletos aparecerem Perfeitamente */
 .card-img-box {
     width: 100%;
-    height: 440px; /* Altura ajustada para o formato vertical das artes */
-    background-color: #060a12;
+    height: 480px; /* Formato vertical adaptado para folhetos/cartazes */
+    background-color: #060b12;
     position: relative;
     overflow: hidden;
 }
@@ -370,9 +338,9 @@ body {
 .card-img-box img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Exibe a imagem inteira sem cortar */
+    object-fit: contain; /* Exibe 100% da foto sem cortar */
     object-position: center;
-    padding: 8px; /* Margem interna para visual elegante de moldura */
+    padding: 6px;
     transition: transform 0.4s ease;
 }
 
@@ -405,7 +373,7 @@ body {
 }
 
 .btn-card {
-    background: linear-gradient(135deg, var(--azul-eletrico), var(--azul-brilhante));
+    background: linear-gradient(135deg, #0055ff, var(--azul-brilhante));
     color: #ffffff;
     padding: 12px;
     text-align: center;
@@ -414,16 +382,14 @@ body {
     font-weight: 800;
     font-size: 13px;
     transition: 0.3s;
-    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 162, 255, 0.3);
 }
 
 .btn-card:hover {
     filter: brightness(1.2);
 }
 
-/* =========================================================
-   SOBRE / DIFERENCIAIS
-   ========================================================= */
+/* SOBRE */
 .about {
     padding: 80px 0;
     background-color: var(--fundo-card);
@@ -476,16 +442,17 @@ body {
     overflow: hidden;
     border: 2px solid var(--azul-brilhante);
     box-shadow: var(--sombra-glow);
+    text-align: center;
+    padding: 20px;
+    background: var(--fundo-principal);
 }
 
 .about-img-frame img {
-    width: 100%;
-    display: block;
+    max-width: 80%;
+    height: auto;
 }
 
-/* =========================================================
-   FAQ & CTA & RODAPÉ
-   ========================================================= */
+/* FAQ, CTA & FOOTER */
 .faq {
     padding: 80px 0;
     background-color: var(--fundo-principal);
@@ -504,7 +471,7 @@ body {
     background-color: var(--fundo-card);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 191, 255, 0.15);
+    border: 1px solid var(--borda-azul);
 }
 
 .faq-item h4 {
@@ -525,7 +492,7 @@ body {
 }
 
 .cta-section {
-    background: linear-gradient(135deg, #0d2240 0%, #0b1320 100%);
+    background: linear-gradient(135deg, #0d1e36 0%, #0a111c 100%);
     padding: 60px 0;
     text-align: center;
     border-top: 1px solid var(--azul-brilhante);
@@ -549,9 +516,9 @@ body {
 }
 
 footer {
-    background-color: #060a12;
+    background-color: #05080f;
     padding: 50px 0 20px 0;
-    border-top: 1px solid rgba(0, 191, 255, 0.1);
+    border-top: 1px solid var(--borda-azul);
 }
 
 .footer-grid {
@@ -577,6 +544,10 @@ footer {
     line-height: 1.6;
 }
 
+.footer-col ul {
+    list-style: none;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
@@ -585,7 +556,7 @@ footer {
     color: var(--texto-secundario);
 }
 
-/* BOTÃO WHATSAPP FLUTUANTE */
+/* BOTÃO FLUTUANTE DO WHATSAPP */
 .whatsapp-float {
     position: fixed;
     width: 58px;
@@ -610,11 +581,12 @@ footer {
     transform: scale(1.1);
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVO */
 @media (max-width: 768px) {
     .top-bar { display: none; }
     .nav-links { display: none; }
     .hero h1 { font-size: 28px; }
     .about-grid { grid-template-columns: 1fr; }
-    .card-img-box { height: 380px; }
+    .card-img-box { height: 400px; }
+    .logo-img { height: 65px; }
 }

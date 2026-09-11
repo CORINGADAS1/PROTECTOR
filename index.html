@@ -3,340 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protector Operações Especiais | Controle de Pragas de Elite</title>
-    <!-- CSS Externo -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome (Ícones) -->
+    <title>Protector Dedetizadora | Operações Especiais</title>
+    <!-- Fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome (Ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Fontes Google Montserrat e Rajdhani (Visual Tático) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Rajdhani:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- BARRA SUPERIOR TÁTICA -->
+    <!-- BARRA SUPERIOR DE CONTATO -->
     <div class="top-bar">
-        <div class="container top-bar-container">
-            <div class="top-bar-alert">
-                <i class="fa-solid fa-crosshair"></i> PROTECTOR OPERAÇÕES ESPECIAIS | ATENDIMENTO 24H
-            </div>
+        <div class="top-bar-container">
+            <span><i class="fa-solid fa-shield-halved"></i> ATENDIMENTO ESPECIALIZADO 24H / EMERGÊNCIAS</span>
             <div class="top-bar-contact">
-                <a href="tel:41995713229"><i class="fa-solid fa-phone"></i> (41) 99571-3229</a>
-                <a href="https://wa.me/5541995713229" target="_blank" class="whats-top"><i class="fa-brands fa-whatsapp"></i> CENTRAL DE ATENDIMENTO</a>
+                <a href="https://wa.me/5541995713229" target="_blank" class="whats-top">
+                    <i class="fa-brands fa-whatsapp"></i> (41) 99571-3229
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- CABEÇALHO / LOGO DA PROTECTOR -->
+    <!-- CABEÇALHO / NAVBAR COM A LOGO NO TOPO -->
     <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo-brand">
-                <div class="logo-shield">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <div class="logo-text-box">
-                    <span class="logo-title">PROTECTOR</span>
-                    <span class="logo-sub">DEDETIZADORA • OPERAÇÕES ESPECIAIS</span>
-                </div>
+        <div class="nav-container">
+            <a href="#" class="logo-wrapper">
+                <!-- Certifique-se de salvar a logo enviada com o nome logo.png na mesma pasta do projeto -->
+                <img src="logo.png" alt="Protector Dedetizadora" class="logo-img">
             </a>
+
             <nav>
                 <ul class="nav-links">
                     <li><a href="#inicio">Início</a></li>
-                    <li><a href="#servicos">Operações Táticas</a></li>
+                    <li><a href="#servicos">Operações</a></li>
                     <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#sobre">A Empresa</a></li>
                     <li><a href="#faq">Dúvidas</a></li>
-                    <li><a href="https://wa.me/5541995713229" target="_blank" class="btn-nav"><i class="fa-brands fa-whatsapp"></i> ACIONAR COMANDO</a></li>
+                    <li>
+                        <a href="https://wa.me/5541995713229" target="_blank" class="btn-nav">
+                            <i class="fa-brands fa-whatsapp"></i> ORÇAMENTO RÁPIDO
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- BANNER PRINCIPAL (HERO TÁTICO AZUL ESCURO) -->
+    <!-- HERO / BANNER PRINCIPAL -->
     <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="badge-tactical">
-                <i class="fa-solid fa-shield-virus"></i> ESQUADRÃO DE ELIMINAÇÃO E CONTROLE
-            </div>
+        <div class="hero-content">
+            <span class="badge"><i class="fa-solid fa-crosshair"></i> TÁTICA E IMUNIZAÇÃO DE PRAGAS</span>
             <h1>PROTECTOR OPERAÇÕES ESPECIAIS</h1>
-            <h2>ELIMINAÇÃO DEFINITIVA E PROTEÇÃO CONTINUA DE ALTO NÍVEL</h2>
-            <p>Varredura técnica, produtos certificados sem cheiro e segurança total para sua família e patrimônio com garantia registrada em contrato.</p>
+            <h2>Controle Definitivo de Pragas Urbanas & Vetores</h2>
+            <p>Proteja sua família, residência ou empresa com tecnologia avançada, produtos sem cheiro e garantia de eliminação total de pragas.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/5541995713229?text=Olá!%20Preciso%20de%20um%20orçamento%20de%20urgência." target="_blank" class="btn btn-primary">
-                    <i class="fa-brands fa-whatsapp"></i> ORÇAMENTO RÁPIDO NO WHATSAPP
+                <a href="https://wa.me/5541995713229" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> ATENDIMENTO VIA WHATSAPP
                 </a>
-                <a href="#servicos" class="btn btn-secondary"><i class="fa-solid fa-bullseye"></i> CONHECER OPERAÇÕES</a>
+                <a href="#servicos" class="btn btn-secondary">CONHECER OPERAÇÕES</a>
             </div>
         </div>
     </section>
 
     <!-- BARRA DE VANTAGENS -->
     <section class="features-bar">
-        <div class="container features-grid">
+        <div class="features-grid">
             <div class="feature-item">
-                <i class="fa-solid fa-paw"></i>
+                <i class="fa-solid fa-clock"></i>
                 <div>
-                    <h4>100% SEGURO PARA PETS</h4>
-                    <p>Aplicação limpa e sem odor</p>
+                    <h4>Atendimento Rápido</h4>
+                    <p>Agendamento imediato em toda a região</p>
                 </div>
             </div>
             <div class="feature-item">
-                <i class="fa-solid fa-file-signature"></i>
+                <i class="fa-solid fa-flask-vial"></i>
                 <div>
-                    <h4>GARANTIA EM CONTRATO</h4>
-                    <p>Assistência e reforço garantido</p>
+                    <h4>Produtos Sem Cheiro</h4>
+                    <p>Fórmulas seguras para crianças e pets</p>
                 </div>
             </div>
             <div class="feature-item">
-                <i class="fa-solid fa-user-shield"></i>
+                <i class="fa-solid fa-award"></i>
                 <div>
-                    <h4>EQUIPE ESPECIALIZADA</h4>
-                    <p>Técnicos treinados e equipados</p>
+                    <h4>Garantia em Contrato</h4>
+                    <p>Segurança e tranquilidade comprovadas</p>
                 </div>
             </div>
             <div class="feature-item">
-                <i class="fa-solid fa-truck-fast"></i>
+                <i class="fa-solid fa-file-contract"></i>
                 <div>
-                    <h4>PRONTIDÃO DE ATENDIMENTO</h4>
-                    <p>Atendimento rápido e eficiente</p>
+                    <h4>Certificado Técnico</h4>
+                    <p>Laudos técnicos para fiscalização</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO DE SERVIÇOS (COM TODAS AS ARTES OFICIAIS) -->
+    <!-- SEÇÃO DE SERVIÇOS (FOTOS) -->
     <section id="servicos" class="services">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title"><i class="fa-solid fa-crosshair"></i> CATÁLOGO DE OPERAÇÕES</span>
-                <h2>LINHA DE COMBATE E SOLUÇÕES TÁTICAS</h2>
-                <p>Selecione o serviço abaixo para acionar nossa equipe diretamente via WhatsApp.</p>
+        <div class="section-title">
+            <span class="sub-title">NOSSAS OPERAÇÕES ESPECIAIS</span>
+            <h2>Soluções Especializadas em Controle de Pragas</h2>
+            <p>Confira abaixo nossas principais linhas de atuação tática:</p>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img-box">
+                    <img src="foto1.jpg" alt="Dedetização Geral">
+                </div>
+                <div class="card-body">
+                    <h3>Dedetização & Imunização Geral</h3>
+                    <p>Combate eficiente contra baratas, formigas, aranhas, escorpiões e insetos voadores com efeito residual duradouro.</p>
+                    <a href="https://wa.me/5541995713229?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Dedetização" target="_blank" class="btn-card">SOLICITAR ORÇAMENTO</a>
+                </div>
             </div>
 
-            <div class="cards-grid">
-                
-                <!-- 1. DEDETIZAÇÃO -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_bee929.jpg" alt="Dedetização Tática Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Dedetização Tática</h3>
-                        <p>Eliminação e bloqueio químico contra baratas, formigas, aranhas, pulgas e pragas rasteiras.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Dedetização." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img-box">
+                    <img src="foto2.jpg" alt="Descupinização">
                 </div>
-
-                <!-- 2. DESRATIZAÇÃO -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_bee665.jpg" alt="Desratização Estratégica Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Desratização Estratégica</h3>
-                        <p>Eliminamos ratos e roedores com iscas blindadas e mapeamento tático de focos.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Desratização." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
+                <div class="card-body">
+                    <h3>Descupinização Tática</h3>
+                    <p>Tratamento profilático e corretivo de cupins de madeira e de solo em móveis, estruturas e edificações.</p>
+                    <a href="https://wa.me/5541995713229?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Descupinização" target="_blank" class="btn-card">SOLICITAR ORÇAMENTO</a>
                 </div>
+            </div>
 
-                <!-- 3. DESCUPINIZAÇÃO -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_bee94d.jpg" alt="Descupinização Profunda Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Descupinização Profunda</h3>
-                        <p>Proteção da madeira e da estrutura do seu imóvel contra danos graves de cupins.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Descupinização." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img-box">
+                    <img src="foto3.jpg" alt="Desratização">
                 </div>
-
-                <!-- 4. ATOMIZAÇÃO -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_bee602.jpg" alt="Atomização Tática Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Atomização Tática</h3>
-                        <p>Névoa de alta penetração que alcança frestas e combate insetos em áreas de difícil acesso.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Atomização." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
+                <div class="card-body">
+                    <h3>Desratização & Controle de Roedores</h3>
+                    <p>Sistemas táticos de atrativos com bloqueio e monitoramento continuo para eliminação total de roedores.</p>
+                    <a href="https://wa.me/5541995713229?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Desratização" target="_blank" class="btn-card">SOLICITAR ORÇAMENTO</a>
                 </div>
-
-                <!-- 5. SANITIZAÇÃO -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_beed64.jpg" alt="Sanitização de Ambientes Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Sanitização de Ambientes</h3>
-                        <p>Elimina 99,9% de vírus, bactérias, fungos, mofo e ácaros, garantindo um ar mais limpo.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Sanitização." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 6. LIMPEZA DE CAIXA D'ÁGUA -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_bee9e8.jpg" alt="Limpeza de Caixa D'Água Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Limpeza de Caixa d'Água</h3>
-                        <p>Desinfecção e remoção completa de impurezas, lodo e bactérias na reserva de água.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Limpeza%20de%20Caixa%20d'Água." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 7. LIMPEZA DE FORRO -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_beed8b.jpg" alt="Aspiração e Limpeza de Forro Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Limpeza e Aspiração de Forro</h3>
-                        <p>Remoção de resíduos, sujeiras, fezes de aves/roedores e aranhas acumuladas no forro.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Limpeza%20de%20Forro." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 8. CONTROLE DE MORCEGOS -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_beeccc.jpg" alt="Controle de Morcegos Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Controle de Morcegos</h3>
-                        <p>Afastamento humanizado e seguro de morcegos alinhado às normas ambientais vigentes.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Controle%20de%20Morcegos." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 9. CONTROLE DE POMBOS -->
-                <div class="card">
-                    <div class="card-img-box">
-                        <img src="image_beed06.jpg" alt="Controle de Pombos Protector">
-                    </div>
-                    <div class="card-body">
-                        <h3>Controle de Pombos</h3>
-                        <p>Instalação de barreiras físicas, géis repelentes e telas para afastar pombos da estrutura.</p>
-                        <a href="https://wa.me/5541995713229?text=Olá!%20Gostaria%20de%20solicitar%20orçamento%20para%20Controle%20de%20Pombos." target="_blank" class="btn-card">
-                            <i class="fa-brands fa-whatsapp"></i> SOLICITAR ORÇAMENTO
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- DIFERENCIAIS DA EMPRESA -->
-    <section id="diferenciais" class="about">
-        <div class="container about-grid">
+    <!-- DIFERENCIAIS / SOBRE NÓS -->
+    <section id="sobre" class="about">
+        <div class="about-grid">
             <div class="about-text">
-                <span class="sub-title">EXCELÊNCIA TÁTICA</span>
-                <h2>POR QUE ESCOLHER A PROTECTOR OPERAÇÕES ESPECIAIS?</h2>
-                <p>Nossa equipe aplica protocolos rigorosos de segurança sanitária, unindo equipamentos de alta potência a produtos de ação rápida que protegem seu imóvel sem causar incômodos.</p>
-                
+                <span class="sub-title">SOBRE A PROTECTOR</span>
+                <h2>Excelência Tática no Combate a Pragas</h2>
+                <p>A Protector Operações Especiais atua no setor de imunização e controle de vetores com alta tecnologia e equipe altamente treinada. Garantimos o bem-estar e a segurança sanitária de ambientes residenciais, comerciais e industriais.</p>
                 <ul class="about-list">
-                    <li><i class="fa-solid fa-circle-check"></i> Produtos autorizados pela Vigilância Sanitária e Anvisa</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Emissão de Certificado de Garantia e Laudo Técnico</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Soluções customizadas para residências, condomínios e indústrias</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Atendimento imediato para Curitiba e toda Região Metropolitana</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Produtos devidamente registrados pela ANVISA</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Técnicos qualificados e paramentados</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Planos personalizados para empresas e condomínios</li>
                 </ul>
             </div>
-            <div class="about-card-badge">
-                <div class="badge-inside">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h3>PROTECTOR</h3>
-                    <p>QUALIDADE E GARANTIA COMPROVADA</p>
-                </div>
+            <div class="about-img-frame">
+                <img src="logo.png" alt="Protector Operações">
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ (DÚVIDAS FREQUENTES) -->
     <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title">DÚVIDAS FREQUENTES</span>
-                <h2>PERGUNTAS RECORRENTES</h2>
+        <div class="section-title">
+            <span class="sub-title">PERGUNTAS FREQUENTES</span>
+            <h2>Tire Suas Dúvidas Rápido</h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> Preciso sair de casa durante o serviço?</h4>
+                <p>Utilizamos metodologias modernas e produtos sem cheiro. Em caso de aplicação em gel, não é necessário sair do ambiente.</p>
             </div>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4><i class="fa-solid fa-shield-cat"></i> É seguro para crianças e animais de estimação?</h4>
-                    <p>Sim! Utilizamos produtos modernos de baixa toxicidade. Após um curto período de secagem e ventilação, o local pode ser ocupado normalmente por pets e crianças.</p>
-                </div>
-                <div class="faq-item">
-                    <h4><i class="fa-solid fa-spray-can-sparkles"></i> A aplicação deixa cheiro forte?</h4>
-                    <p>Não. Trabalhamos prioritariamente com formulações inodoras que não mancham móveis ou estofados.</p>
-                </div>
-                <div class="faq-item">
-                    <h4><i class="fa-solid fa-file-contract"></i> O serviço tem garantia?</h4>
-                    <p>Sim. Todos os nossos serviços acompanham certificado formal de garantia com direito a assistência quando necessário.</p>
-                </div>
-                <div class="faq-item">
-                    <h4><i class="fa-solid fa-credit-card"></i> Quais as opções de pagamento?</h4>
-                    <p>Aceitamos Pix, cartões de crédito e débito, além de faturamento facilitado para empresas.</p>
-                </div>
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> Os produtos afetam meus animais de estimação?</h4>
+                <p>Nossos produtos são formulados com baixa toxicidade para mamíferos e aplicados em pontos estratégicos fora do alcance dos pets.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fa-solid fa-circle-question"></i> O serviço possui garantia?</h4>
+                <p>Sim! Todos os nossos serviços acompanham certificado de garantia em contrato para a sua inteira tranquilidade.</p>
             </div>
         </div>
     </section>
 
-    <!-- CALL TO ACTION FINAL -->
+    <!-- CALL TO ACTION -->
     <section class="cta-section">
-        <div class="container cta-container">
-            <h2>LIVRE-SE DAS PRAGAS COM QUEM ENTENDE DO ASSUNTO</h2>
-            <p>Fale diretamente com nossa central de atendimento e solicite um orçamento rápido sem compromisso.</p>
-            <a href="https://wa.me/5541995713229" target="_blank" class="btn btn-cta">
-                <i class="fa-brands fa-whatsapp"></i> ACIONAR NO WHATSAPP: (41) 99571-3229
+        <div class="cta-container">
+            <h2>Pronto para proteger seu imóvel?</h2>
+            <p>Entre em contato com a equipe Protector e solicite uma cotação sem compromisso agora mesmo.</p>
+            <a href="https://wa.me/5541995713229" target="_blank" class="btn btn-primary">
+                <i class="fa-brands fa-whatsapp"></i> FALE CONOSCO NO WHATSAPP
             </a>
         </div>
     </section>
 
-    <!-- RODAPÉ TÁTICO -->
+    <!-- RODAPÉ -->
     <footer>
-        <div class="container footer-grid">
+        <div class="footer-grid">
             <div class="footer-col">
-                <div class="logo-brand logo-footer">
-                    <div class="logo-shield">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <div class="logo-text-box">
-                        <span class="logo-title">PROTECTOR</span>
-                        <span class="logo-sub">OPERAÇÕES ESPECIAIS</span>
-                    </div>
-                </div>
-                <p>Especialistas em dedetização, sanitização, controle de pragas urbanas e higienização técnica.</p>
+                <h4>PROTECTOR DEDETIZADORA</h4>
+                <p>Especialistas no controle de vetores e pragas urbanas. Qualidade, rapidez e eficiência garantida.</p>
             </div>
             <div class="footer-col">
-                <h4>NOSSAS OPERAÇÕES</h4>
+                <h4>NAVEGAÇÃO</h4>
                 <ul>
-                    <li><a href="#servicos">Dedetização e Desratização</a></li>
-                    <li><a href="#servicos">Descupinização e Atomização</a></li>
-                    <li><a href="#servicos">Sanitização e Limpeza de Caixa d'Água</a></li>
-                    <li><a href="#servicos">Controle de Morcegos e Pombos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Operações</a></li>
+                    <li><a href="#sobre">A Empresa</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>CONTATO RÁPIDO</h4>
-                <p><i class="fa-solid fa-phone"></i> (41) 99571-3229</p>
+                <h4>CONTATO</h4>
                 <p><i class="fa-brands fa-whatsapp"></i> (41) 99571-3229</p>
-                <p><i class="fa-solid fa-location-dot"></i> Atendimento em Curitiba e Região</p>
+                <p><i class="fa-solid fa-clock"></i> Atendimento 24h</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -344,15 +226,12 @@
         </div>
     </footer>
 
-    <!-- BOTÃO WHATSAPP FLUTUANTE -->
-    <a href="https://wa.me/5541995713229" class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5541995713229" class="whatsapp-float" target="_blank" title="Falar pelo WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
 </body>
 </html>
-
-
-
 
 
